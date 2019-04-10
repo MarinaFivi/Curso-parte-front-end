@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Ejercicio peliculas html</title>
+        <meta charset="UTF-8"/>
+        <script type="text/javascript" src="js/ejercicioPeliculas.js"> </script>
+    </head>
+    <body>
+        <header>
+            <h1>Tablitas y tablas</h1>
+        </header>
+        <form>
+            <input name="titulo" type="text" placeholder="titulo" required/><br/>
+            <input name="director" type="text" placeholder="director" required/><br/>
+            <input name="cod_id" type="text" placeholder="codigo de identificacion" pattern="[A-Z]{3}-[0-9]{5}-[A-Z]{2}"/><br/>
+            <label for="genero">Género</label>
+            <select name="genero"> 
+                <option value="comedia">Comedia</option> 
+                <option value="accion">Accion</option>
+                <option value="romance">Romance</option>
+                <option value="terror">Terror</option>
+            </select><br/>
+            <label for="fecha de estreno" >Fecha de estreno: </label> <input name="fecha de estreno" type="date" placeholder="fecha de estreno"/><br/>
+            <label for="valoracion" >valoración: </label> <input name="valoracion" type="range" placeholder="valoracion" min="0" max="10" />
+            <br/>
+            <input type="button" onclick="mostrarContenidoDeCamposDeTexto()" value="Guardar" />
+            <br/>
+            <table>
+                <thead>
+                    <th>Titulo </th>
+                    <th>director </th>
+                    <th>cod_id </th>
+                    <th>genero </th>
+                    <th>fecha </th>
+                    <th>valoracion</th>
+                </thead>
+                <tr>
+                        <td>Titanic</td><td>James Cameron</td><td>AAA-11111-AA</td><td>Romance</td><td>1997-12-19</td><td>8</td>
+                </tr>
+            </table>
+            
+            
+        </form>
+
+
+    </body>
+</html>
